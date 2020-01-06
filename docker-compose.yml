@@ -1,0 +1,27 @@
+version: '3.5'
+
+services:
+  jenkins:
+    image: jenkins/jenkins
+    container_name: jenkins
+    volumes:
+        - $PWD/jenkins:/var/jenkins_home 
+    ports:
+        - 8181:8080
+        - 50000:50000
+        - 5151:5050
+
+  tomcat:
+    image: tomcat:8.0
+    container_name: tomcat
+    volumes:
+        - ./tomcat-users.xml:/usr/local/tomcat/conf/tomcat-users.xml
+    ports:
+        - 8080:8080
+    logging:
+      driver: gelf
+      options:
+        gelf-address: "udp://localhost:12201"
+
+
+
