@@ -10,14 +10,14 @@ Integrating Jenkins Container with Tomcat Container
 
 Prepare you jenkins server and then tomcat server
 
--------------------------------------------------
+
 |	Jenkins		|	Tomcat		|
--------------------------------------------------
+|-----------|-----------|
 | * Maven Integration	| * Create user with	|
 | * GitHub Plugin	|   required access	|
 | * Create Credentials 	| * Tomcat Should run on| 
 | * Project URL (git)	|   port 8080		|
--------------------------------------------------
+
 
 For Installing Tomcat on Ubuntu-18.04
 
