@@ -13,10 +13,10 @@ Prepare you jenkins server and then tomcat server
 
 |	Jenkins		|	Tomcat		|
 |-----------|-----------|
-| * Maven Integration	| * Create user with	|
-| * GitHub Plugin	|   required access	|
-| * Create Credentials 	| * Tomcat Should run on| 
-| * Project URL (git)	|   port 8080		|
+| * Maven Integration	| * Create user with required access|
+| * GitHub Plugin	|   * Tomcat Should run on port 8080|
+| * Create Credentials 	| | 
+| * Project URL (git)	|   		|
 
 
 For Installing Tomcat on Ubuntu-18.04
